@@ -3,7 +3,7 @@ name: google-drive-upload
 description: >
   Upload files to Google Drive via Google Apps Script API.
   Trigger on: upload to Drive, save to Drive, send to Drive, put this in Drive,
-  upload to Google Drive. Also Hebrew: ◊™◊¢◊ú◊î ◊ú◊ì◊®◊ô◊ô◊ë, ◊©◊û◊ï◊® ◊ë◊ì◊®◊ô◊ô◊ë, ◊î◊¢◊ú◊î ◊ú◊í◊ï◊í◊ú ◊ì◊®◊ô◊ô◊ë.
+  upload to Google Drive. Also Hebrew: "תעלה לדרייב", "שמור בדרייב", "העלה לגוגל דרייב", "תשמור בדרייב".
   Use proactively when a workflow produces a file the user might want in Drive.
 version: 1.0.0
 ---
@@ -87,14 +87,15 @@ Share the `fileUrl` with the user on success. On failure, check the error messag
 
 ## Folder targeting
 
-- `folderPath`: "Clients/Acme" ‚Äî creates folders if they don't exist
-- `folderId`: "1abc..." ‚Äî target a specific folder by ID
+- `folderPath`: "Clients/Acme" — creates folders if they don't exist
+- `folderId`: "1abc..." — target a specific folder by ID
 - Neither: saves to root of My Drive
 
 ## List folders
 
 ```bash
 curl -s -L "APPS_SCRIPT_URL?action=list_folders"
+curl -s -L "APPS_SCRIPT_URL?action=list_folders&folderId=FOLDER_ID"
 ```
 
 ## Key notes
