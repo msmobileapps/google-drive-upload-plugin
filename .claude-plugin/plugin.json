@@ -1,10 +1,10 @@
 {
     "name": "google-drive-upload",
-    "version": "1.0.0",
-    "description": "Upload files directly from Claude to Google Drive. No OAuth, no complex API — just a simple Google Apps Script and you're done.",
+    "version": "1.1.0",
+    "description": "Upload files directly from Claude to Google Drive — completely free, unlimited uploads. No OAuth, no complex API — just a simple Google Apps Script and you're done.",
     "author": {
           "name": "MSApps"
     },
-    "homepage": "https://msapps.mobi",
+    "homepage": "https://msapps.mobi/plugins",
     "keywords": ["google-drive", "upload", "files", "cloud-storage", "google"]
 }
